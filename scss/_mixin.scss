@@ -1,0 +1,8 @@
+@mixin karp {
+    color: burlywood;
+    background-color: cadetblue;
+}
+@mixin coloro($papa){
+    color: $papa;
+   
+}

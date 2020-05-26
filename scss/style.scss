@@ -1,0 +1,49 @@
+@import "mixin";
+$var1:20px;
+$var2:15px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+ 
+body{
+    background-image: url(fon/karapus.png);
+     
+ 
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    header{
+        @include karp;
+        font-size: $var1;
+    }
+    
+    .witcher{
+        flex: 1 1 auto;
+        font-size: $var2;
+      }
+      .footer{
+        color:grey;  
+        flex: 0 0 auto;
+        
+    }
+    header,main,.perc,footer{
+        padding: 0 15px;
+    }
+}
+
+.expl,.perc,footer{
+    @include coloro(rgb(209, 113, 193))
+}
+@media (max-width:450px){
+
+    .hero{
+        height: 100px;
+        width: 150px;
+    }
+}
+
